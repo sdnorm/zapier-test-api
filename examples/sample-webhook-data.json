@@ -1,0 +1,62 @@
+{
+  "github_up": {
+    "api_status": {
+      "api_name": "github",
+      "status": "UP",
+      "response_time": 245,
+      "status_code": 200,
+      "endpoint": "https://api.github.com/users/octocat",
+      "error_message": null
+    }
+  },
+  "github_slow": {
+    "api_status": {
+      "api_name": "github",
+      "status": "SLOW",
+      "response_time": 1200,
+      "status_code": 200,
+      "endpoint": "https://api.github.com/users/octocat",
+      "error_message": "Response time above threshold"
+    }
+  },
+  "stripe_up": {
+    "api_status": {
+      "api_name": "stripe",
+      "status": "UP",
+      "response_time": 156,
+      "status_code": 200,
+      "endpoint": "https://api.stripe.com/v1/charges",
+      "error_message": null
+    }
+  },
+  "stripe_down": {
+    "api_status": {
+      "api_name": "stripe",
+      "status": "DOWN",
+      "response_time": 0,
+      "status_code": 500,
+      "endpoint": "https://api.stripe.com/v1/charges",
+      "error_message": "Internal server error"
+    }
+  },
+  "jsonplaceholder_up": {
+    "api_status": {
+      "api_name": "jsonplaceholder",
+      "status": "UP",
+      "response_time": 340,
+      "status_code": 200,
+      "endpoint": "https://jsonplaceholder.typicode.com/posts/1",
+      "error_message": null
+    }
+  },
+  "custom_api_down": {
+    "api_status": {
+      "api_name": "custom_api",
+      "status": "DOWN",
+      "response_time": 0,
+      "status_code": 404,
+      "endpoint": "https://example.com/api/health",
+      "error_message": "Connection timeout after 30 seconds"
+    }
+  }
+}
